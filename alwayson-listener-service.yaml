@@ -7,6 +7,9 @@ spec:
   selector:
     app: mssql
   ports:
-    - name: sql
+    - name: sqlserver
       port: 1433
       targetPort: 1433
+    - name: endpoint
+      port: 5022
+      targetPort: 5022
